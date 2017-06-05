@@ -26,7 +26,7 @@ HDD image will be created on docker container
 ```sh
 sudo docker run --device /dev/kvm:/dev/kvm -p 5901:5901 \
     -v <MacOS Install ISO host path>:/macos/install.iso \
-    mainto/macos:base-<VERSION>
+    mainto/macos:<VERSION>
 ```
 ###### example
 ```sh
