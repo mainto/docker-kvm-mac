@@ -40,7 +40,7 @@ sudo docker run --device /dev/kvm:/dev/kvm -p 5901:5901 \
 sudo docker run --device /dev/kvm:/dev/kvm -p 5901:5901 \
     -v <Mac HDD IMG host path>:/macos/hdd.img \
     -v <MacOS Install ISO host path>:/macos/install.iso \
-    mainto/macos:10.12.5
+    mainto/macos:<VERSION>
 ```
 ###### example
 ```sh
@@ -65,7 +65,7 @@ sudo docker run --device /dev/kvm:/dev/kvm \
 sudo docker run --device /dev/kvm:/dev/kvm \
     -p 5900:5900 -p 5901:5901 \
     -v <Mac HDD IMG host path>:/macos/hdd.img \
-    mainto/macos:10.12.5
+    mainto/macos:<VERSION>
 ```
 * VNC port 5900 for screen sharing (You need to enable on MacOS system preferences)
 * VNC port 5901 for console
