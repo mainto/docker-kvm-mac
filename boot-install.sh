@@ -24,8 +24,8 @@ qemu-system-x86_64 -enable-kvm -m 4096 -cpu Penryn,kvm=off,vendor=GenuineIntel \
 	  -kernel ./enoch_rev2883_boot \
 	  -smbios type=2 \
 	  -device ide-drive,bus=ide.2,drive=MacHDD \
-	  -drive id=MacHDD,if=none,file=./hdd.img \
+	  -drive id=MacHDD,if=none,file=/sysboot/img/hdd.img \
 	  -netdev user,id=usr0 -device e1000-82545em,netdev=usr0,id=vnet0 \
 	  -device ide-drive,bus=ide.0,drive=MacDVD \
-	  -drive id=MacDVD,if=none,snapshot=on,file=./install.iso \
+	  -drive id=MacDVD,if=none,snapshot=on,file=/sysboot/iso/HighSierra.iso \
 	  -vnc 0.0.0.0:1 -k en-us
